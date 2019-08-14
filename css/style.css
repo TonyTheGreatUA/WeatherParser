@@ -1,0 +1,50 @@
+@font-face {
+    font-family: 'caviar_dreamsregular';
+    src:url('CaviarDreams-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(rgb(119,179,212), rgb(48,62,143));
+    font-family: caviar_dreamsregular;
+    color: #ffffff;
+}
+.location{
+    height: 10vh !important;
+}
+.location,
+.temperature{
+    height: 30vh;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.temperature{
+    flex-direction: column;
+}
+.degree-section{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.degree-section span{
+    margin: 10px;
+    font-size: 30px;
+}
+.degree-section h2{
+    font-size: 40px;
+}
+.daily-description{
+    text-align: center;
+}
